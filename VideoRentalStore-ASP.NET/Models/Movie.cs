@@ -1,10 +1,6 @@
-﻿using System;
-using System.Web;
-
-namespace VideoRentalStore-ASP.NET.Models{
-        
-}
+﻿
 
 Public Class Movie
-
+    public int Id { get; set; }
+    public string Name { get; set; }
 End Class
