@@ -14,7 +14,7 @@ namespace VideoRentalStore.Controllers
         {
             var movie = new Movie()
             {
-                Name = "hi"
+                Name = "movie name"
             };
 
             return View(movie);
