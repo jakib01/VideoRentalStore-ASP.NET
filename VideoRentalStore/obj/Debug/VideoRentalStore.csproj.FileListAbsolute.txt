@@ -72,8 +72,8 @@ D:\Akib\ASP.NET\VideoRentalStore\VideoRentalStore\bin\System.Web.WebPages.Razor.
 D:\Akib\ASP.NET\VideoRentalStore\VideoRentalStore\bin\Newtonsoft.Json.xml
 D:\Akib\ASP.NET\VideoRentalStore\VideoRentalStore\bin\Antlr3.Runtime.pdb
 D:\Akib\ASP.NET\VideoRentalStore\VideoRentalStore\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-D:\Akib\ASP.NET\VideoRentalStore\VideoRentalStore\obj\Debug\VideoRentalStore.csproj.AssemblyReference.cache
 D:\Akib\ASP.NET\VideoRentalStore\VideoRentalStore\obj\Debug\VideoRentalStore.csproj.CoreCompileInputs.cache
 D:\Akib\ASP.NET\VideoRentalStore\VideoRentalStore\obj\Debug\VideoRentalStore.csproj.CopyComplete
 D:\Akib\ASP.NET\VideoRentalStore\VideoRentalStore\obj\Debug\VideoRentalStore.dll
 D:\Akib\ASP.NET\VideoRentalStore\VideoRentalStore\obj\Debug\VideoRentalStore.pdb
+D:\Akib\ASP.NET\VideoRentalStore\VideoRentalStore\obj\Debug\VideoRentalStore.csproj.AssemblyReference.cache

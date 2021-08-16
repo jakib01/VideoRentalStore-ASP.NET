@@ -14,10 +14,16 @@ namespace VideoRentalStore.Controllers
         {
             var movie = new Movie()
             {
+                Id = 1,
                 Name = "movie name"
             };
 
             return View(movie);
+        }
+
+        public ActionResult Edit(int id)
+        {
+            return Content("id=" + id);
         }
     }
 }
