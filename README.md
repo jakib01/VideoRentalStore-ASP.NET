@@ -1,1 +1,0 @@
-# VideoRentalStore-ASP.NET
