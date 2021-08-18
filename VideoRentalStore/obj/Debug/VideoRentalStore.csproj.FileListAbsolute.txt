@@ -156,3 +156,7 @@ E:\Akib\ASP.NET\VideoRentalStore\VideoRentalStore\obj\Debug\VideoRentalStore.csp
 E:\Akib\ASP.NET\VideoRentalStore\VideoRentalStore\obj\Debug\VideoRentalStore.csproj.CopyComplete
 E:\Akib\ASP.NET\VideoRentalStore\VideoRentalStore\obj\Debug\VideoRentalStore.dll
 E:\Akib\ASP.NET\VideoRentalStore\VideoRentalStore\obj\Debug\VideoRentalStore.pdb
+E:\Akib\ASP.NET\VideoRentalStore\VideoRentalStore\bin\EntityFramework.dll
+E:\Akib\ASP.NET\VideoRentalStore\VideoRentalStore\bin\EntityFramework.SqlServer.dll
+E:\Akib\ASP.NET\VideoRentalStore\VideoRentalStore\bin\EntityFramework.xml
+E:\Akib\ASP.NET\VideoRentalStore\VideoRentalStore\bin\EntityFramework.SqlServer.xml
