@@ -1,9 +1,18 @@
-﻿
+﻿@model VideoRentalStore.Context.tbl_employee
 @{
     ViewBag.Title = "Employee";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Employee</h2>
+@using (Html.BeginForm("AddEmployee","Employee",FormMethod.Post))
+{
+    <div class="container">
+        <div class="form-group">
+            <label>Name</label>
+            @Html.TextBoxFor(x=>x.Name,new { @class="form-control"})
+        </div>
+    </div>
+
+}
 
 
