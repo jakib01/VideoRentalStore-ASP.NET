@@ -1,0 +1,55 @@
+﻿@*list used because of multiple data*@
+@model List<VideoRentalStore.Context.tbl_employee>
+
+@{
+    ViewBag.Title = "EmployeeList";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@*<style>
+    .col td {
+        font-weight: bold;
+    }
+</style>*@
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Employee List</h2>
+        </div>
+    </div>
+
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <td scope="col">#</td>
+                <td scope="col">Name</td>
+                <td scope="col">Father Name</td>
+                <td scope="col">Email</td>
+                <td scope="col">Phone no.</td>
+                <td scope="col">Description</td>
+                <td scope="col">Action</td>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td></td>
+                    <td>@item.Name</td>
+                    <td>@item.Fname</td>
+                    <td>@item.Email</td>
+                    <td>@item.Mobile</td>
+                    <td>@item.Description</td>
+                    <td>
+                        <a href="#"><i class="glyphicon glyphicon-pencil"></i></a>
+                        <a href="#"><i class="glyphicon glyphicon-trash"></i></a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+
+

@@ -38,7 +38,8 @@ namespace VideoRentalStore.Controllers
 
         public ActionResult EmployeeList()
         {
-
+            var res = dbObj.tbl_employee.ToList(); //dbObj is data object 
+                return View(res);
         }
 
     }

@@ -6,6 +6,7 @@
     <title>@ViewBag.Title - My ASP.NET Application</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -31,6 +32,7 @@
                         </a>
                         <ul class="dropdown-menu">
                             <li>@Html.ActionLink("Employee Add(Razor)", "Employee", "Employee")</li>
+                            <li>@Html.ActionLink("Employee List(Razor)", "EmployeeList", "Employee")</li>
                             <li><a href="#">Another action</a></li>
                         </ul>
                     </li>
