@@ -29,7 +29,7 @@ namespace VideoRentalStore.Controllers
             dbObj.tbl_employee.Add(obj); 
             dbObj.SaveChanges();
 
-            return View();
+            return View("Employee");
         }
     }
 }
