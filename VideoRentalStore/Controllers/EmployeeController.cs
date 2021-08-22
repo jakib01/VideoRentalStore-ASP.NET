@@ -42,5 +42,14 @@ namespace VideoRentalStore.Controllers
                 return View(res);
         }
 
+        public ActionResult EmployeeDelete(int id)
+        {
+            var res = dbObj.tbl_employee.Where(x => x.ID == id).First();
+            dbObj.tbl_employee.Remove(res);
+            dbObj.SaveChanges();
+            var list = dbObj.tbl_employee.ToList();
+            return View("EmployeeList", list);
+        }
+
     }
 }
