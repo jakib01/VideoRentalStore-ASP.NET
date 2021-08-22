@@ -4,36 +4,48 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+<style>
+    .error{
+        color:red;
+    }
+</style>
+
 @using (Html.BeginForm("AddEmployee","Employee",FormMethod.Post))
 {
 <div class="container">
     <div class="form-group">
-        <label>Name</label>
+        <label>Full Name</label>
+        @Html.ValidationMessageFor(x=>x.Name,"", new { @class= "error"})
         @Html.TextBoxFor(x => x.Name, new { @class = "form-control" })
     </div>
 
     <div class="form-group">
-        <label>Name</label>
+        <label>Father Name</label>
+        @Html.ValidationMessageFor(x=>x.Fname,"", new { @class="error"}) 
         @Html.TextBoxFor(x => x.Fname, new { @class = "form-control" })
     </div>
 
     <div class="form-group">
-        <label>Name</label>
+        <label>Email address</label>
+        @Html.ValidationMessageFor(x=>x.Email,"", new { @class="error"})
         @Html.TextBoxFor(x => x.Email, new { @class = "form-control" })
     </div>
 
     <div class="form-group">
-        <label>Name</label>
+        <label>Phone No.</label>
+        @Html.ValidationMessageFor(x=>x.Mobile,"", new { @class="error"})
         @Html.TextBoxFor(x => x.Mobile, new { @class = "form-control" })
     </div>
 
     <div class="form-group">
-        <label>Name</label>
-        @Html.TextAreaFor(x => x.Description, new { @class = "form-control", @rows = "10" })
+        <label>Description</label>
+        @Html.ValidationMessageFor(x=>x.Description,"", new { @class="error"})
+        @Html.TextAreaFor(x => x.Description, new { @class = "form-control", @rows = "5" })
     </div>
 
     <div class="form-group">
         <button type="submit" class="btn btn-primary">Save Changes</button>
+        <button type="submit" class="btn btn-danger">Cancel</button>
     </div>
 </div>
 

@@ -19,17 +19,27 @@ namespace VideoRentalStore.Controllers
         [HttpPost]
         public ActionResult AddEmployee(tbl_employee model)
         {
-            tbl_employee obj = new tbl_employee(); //tbl_employee is a table name
-            obj.Name = model.Name;
-            obj.Fname = model.Fname;
-            obj.Email = model.Email;
-            obj.Mobile = model.Mobile;
-            obj.Description = model.Description;
 
-            dbObj.tbl_employee.Add(obj); 
-            dbObj.SaveChanges();
+            if(ModelState.IsValid){
+                tbl_employee obj = new tbl_employee(); //tbl_employee is a table name
+                obj.Name = model.Name;
+                obj.Fname = model.Fname;
+                obj.Email = model.Email;
+                obj.Mobile = model.Mobile;
+                obj.Description = model.Description;
 
+                dbObj.tbl_employee.Add(obj);
+                dbObj.SaveChanges();
+            }
+            ModelState.Clear();
+        
             return View("Employee");
         }
+
+        public ActionResult EmployeeList()
+        {
+
+        }
+
     }
 }
