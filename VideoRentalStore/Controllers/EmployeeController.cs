@@ -52,6 +52,34 @@ namespace VideoRentalStore.Controllers
             dbObj.SaveChanges();
             var list = dbObj.tbl_employee.ToList();
             return View("EmployeeList", list);
+        }  
+
+        public ActionResult EmployeeEdit(int id)
+        {
+            var employeeData = dbObj.tbl_employee.Where(x => x.ID == id).First();
+            return View("EmployeeEdit",employeeData);
+        }
+
+
+        public ActionResult EmployeeEditStore(tbl_employee model)
+        {
+
+            if (ModelState.IsValid)
+            {
+                var employeeData = dbObj.tbl_employee.Where(x => x.ID == model.ID).FirstOrDefault();
+                employeeData.Name = model.Name;
+                employeeData.Fname = model.Fname;
+                employeeData.Email = model.Email;
+                employeeData.Mobile = model.Mobile;
+                employeeData.Description = model.Description;
+
+                dbObj.Entry(employeeData).State = System.Data.Entity.EntityState.Modified;
+                dbObj.SaveChanges();
+                //ModelState.Clear();
+            }
+
+            var list = dbObj.tbl_employee.ToList();
+            return View("EmployeeList", list);
         }
 
     }

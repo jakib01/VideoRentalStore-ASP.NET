@@ -14,7 +14,7 @@
 @using (Html.BeginForm("AddEmployee", "Employee", FormMethod.Post))
 {
     <div class="container">
-        @*@Html.HiddenFor(x => x.ID)*@
+        
         <div class="form-group">
             <label>Full Name</label>
             @Html.ValidationMessageFor(x => x.Name, "", new { @class = "error" })
@@ -50,6 +50,8 @@
             <button type="submit" class="btn btn-danger">Cancel</button>
         </div>
     </div>
+
+    
  }
 
 
