@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -19,8 +18,9 @@ namespace VideoRentalStore.Controllers
         [HttpPost]
         public ActionResult AddEmployee(tbl_employee model)
         {
-
-            if(ModelState.IsValid){
+            
+            if (ModelState.IsValid)
+            {
                 tbl_employee obj = new tbl_employee(); //tbl_employee is a table name
                 obj.Name = model.Name;
                 obj.Fname = model.Fname;
@@ -30,16 +30,19 @@ namespace VideoRentalStore.Controllers
 
                 dbObj.tbl_employee.Add(obj);
                 dbObj.SaveChanges();
+                ModelState.Clear();
+
             }
-            ModelState.Clear();
-        
+            var errors = ModelState.Values.SelectMany(v => v.Errors);
+
             return View("Employee");
+            //return Content("<script> alert('hello" + errors + "hello') </script>");
         }
 
         public ActionResult EmployeeList()
         {
             var res = dbObj.tbl_employee.ToList(); //dbObj is data object 
-                return View(res);
+            return View(res);
         }
 
         public ActionResult EmployeeDelete(int id)

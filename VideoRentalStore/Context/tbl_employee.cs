@@ -24,13 +24,14 @@ namespace VideoRentalStore.Context
         public string Fname { get; set; }
 
         [Required(ErrorMessage = "Email Field is required")]
-        [EmailAddress]
+        //[EmailAddress]
         public string Email { get; set; }
 
         [Required(ErrorMessage = "Phone no. Field is required")]
-        [MinLength(11,ErrorMessage ="Phone no should be 11 digit")]
+        [MinLength(11, ErrorMessage = "Phone no should be 11 digit")]
         public string Mobile { get; set; }
 
         public string Description { get; set; }
     }
 }
+
