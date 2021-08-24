@@ -12,13 +12,17 @@ namespace VideoRentalStore.Context
     using System;
     using System.Collections.Generic;
     
-    public partial class tbl_employee
+    public partial class tbl_users
     {
-        public int ID { get; set; }
-        public string Name { get; set; }
-        public string Fname { get; set; }
+        public int UserID { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
         public string Email { get; set; }
-        public string Mobile { get; set; }
-        public string Description { get; set; }
+        public string PhoneNo { get; set; }
+        public byte[] UserName { get; set; }
+        public string Password { get; set; }
+        public string Image { get; set; }
+        public string Address { get; set; }
+        public Nullable<int> Country { get; set; }
     }
 }
