@@ -13,5 +13,21 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="tbl_users">
+      <EntityTypeMapping TypeName="db_VideoRentalstoreModel.tbl_users">
+        <MappingFragment StoreEntitySet="tbl_users">
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="PhoneNo" ColumnName="PhoneNo" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
   </EntityContainerMapping>
 </Mapping>

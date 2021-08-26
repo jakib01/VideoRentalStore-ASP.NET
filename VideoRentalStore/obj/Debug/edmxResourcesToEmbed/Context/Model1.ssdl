@@ -11,7 +11,23 @@
     <Property Name="Mobile" Type="varchar" MaxLength="50" />
     <Property Name="Description" Type="varchar" MaxLength="50" />
   </EntityType>
+  <EntityType Name="tbl_users">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="UserID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FirstName" Type="varchar" MaxLength="50" />
+    <Property Name="LastName" Type="varchar" MaxLength="50" />
+    <Property Name="Email" Type="varchar" MaxLength="50" />
+    <Property Name="PhoneNo" Type="varchar" MaxLength="50" />
+    <Property Name="UserName" Type="varbinary" MaxLength="50" />
+    <Property Name="Password" Type="varchar" MaxLength="50" />
+    <Property Name="Image" Type="varchar" MaxLength="50" />
+    <Property Name="Address" Type="varchar" MaxLength="255" />
+    <Property Name="Country" Type="int" />
+  </EntityType>
   <EntityContainer Name="db_VideoRentalstoreModelStoreContainer">
     <EntitySet Name="tbl_employee" EntityType="Self.tbl_employee" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_users" EntityType="Self.tbl_users" Schema="dbo" store:Type="Tables" />
   </EntityContainer>
 </Schema>

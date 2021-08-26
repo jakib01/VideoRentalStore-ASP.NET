@@ -151,7 +151,6 @@ E:\Akib\ASP.NET\VideoRentalStore\VideoRentalStore\bin\System.Web.WebPages.Razor.
 E:\Akib\ASP.NET\VideoRentalStore\VideoRentalStore\bin\Newtonsoft.Json.xml
 E:\Akib\ASP.NET\VideoRentalStore\VideoRentalStore\bin\Antlr3.Runtime.pdb
 E:\Akib\ASP.NET\VideoRentalStore\VideoRentalStore\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-E:\Akib\ASP.NET\VideoRentalStore\VideoRentalStore\obj\Debug\VideoRentalStore.csprojAssemblyReference.cache
 E:\Akib\ASP.NET\VideoRentalStore\VideoRentalStore\obj\Debug\VideoRentalStore.csproj.CoreCompileInputs.cache
 E:\Akib\ASP.NET\VideoRentalStore\VideoRentalStore\obj\Debug\VideoRentalStore.csproj.CopyComplete
 E:\Akib\ASP.NET\VideoRentalStore\VideoRentalStore\obj\Debug\VideoRentalStore.dll
@@ -160,3 +159,4 @@ E:\Akib\ASP.NET\VideoRentalStore\VideoRentalStore\bin\EntityFramework.dll
 E:\Akib\ASP.NET\VideoRentalStore\VideoRentalStore\bin\EntityFramework.SqlServer.dll
 E:\Akib\ASP.NET\VideoRentalStore\VideoRentalStore\bin\EntityFramework.xml
 E:\Akib\ASP.NET\VideoRentalStore\VideoRentalStore\bin\EntityFramework.SqlServer.xml
+E:\Akib\ASP.NET\VideoRentalStore\VideoRentalStore\obj\Debug\VideoRentalStore.csproj.AssemblyReference.cache
