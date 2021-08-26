@@ -20,10 +20,10 @@
     <Property Name="LastName" Type="varchar" MaxLength="50" />
     <Property Name="Email" Type="varchar" MaxLength="50" />
     <Property Name="PhoneNo" Type="varchar" MaxLength="50" />
-    <Property Name="UserName" Type="varbinary" MaxLength="50" />
+    <Property Name="UserName" Type="varchar" MaxLength="50" />
     <Property Name="Password" Type="varchar" MaxLength="50" />
     <Property Name="Image" Type="varchar" MaxLength="50" />
-    <Property Name="Address" Type="varchar" MaxLength="255" />
+    <Property Name="Address" Type="varchar" MaxLength="50" />
     <Property Name="Country" Type="int" />
   </EntityType>
   <EntityContainer Name="db_VideoRentalstoreModelStoreContainer">

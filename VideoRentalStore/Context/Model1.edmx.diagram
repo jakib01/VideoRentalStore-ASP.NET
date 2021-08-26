@@ -6,7 +6,7 @@
     <edmx:Diagrams>
       <Diagram DiagramId="01c8ec591d704c2bbaa21b145451d7aa" Name="Diagram1">
         <EntityTypeShape EntityType="db_VideoRentalstoreModel.tbl_employee" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="db_VideoRentalstoreModel.tbl_users" Width="1.5" PointX="3.375" PointY="0.75" />
+        <EntityTypeShape EntityType="db_VideoRentalstoreModel.tbl_users" Width="1.5" PointX="3.375" PointY="0.75" IsExpanded="true" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
